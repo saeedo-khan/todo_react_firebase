@@ -1,0 +1,15 @@
+@import "./sassStyles/variables";
+@import "./sassStyles/mixins";
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(216, 216, 216);
+  .container {
+    box-shadow: $base-box-shadow;
+    width: 60rem;
+    margin: 0 auto;
+    height: 50vh;
+  }
+}

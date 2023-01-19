@@ -1,0 +1,36 @@
+@import "./variables";
+// breakpoints
+@mixin bp-large {
+    @media only screen and (max-width: $large) {
+      @content;
+    }
+}
+  
+@mixin bp-medium {
+@media only screen and (max-width: $medium) {
+    @content;
+}
+}
+  
+@mixin bp-small {
+@media only screen and (max-width: $small) {
+    @content;
+}
+}
+
+// flex 
+@mixin centerElement($dir: row) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @if $dir == row{
+        flex-direction: row;
+    } @else if $dir == row-reverse{
+        flex-direction: row-reverse;
+    } @else if $dir == column {
+        flex-direction: column;
+    } @else if $dir == column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
