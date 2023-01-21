@@ -1,0 +1,26 @@
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $base-padding $base-padding *2;
+    margin: $base-margin 0;
+    @include bp-small{
+        flex-wrap: wrap;
+    }
+
+    .left-col{
+        @include centerElement();
+    }
+    .mid-col{
+        
+    }
+    .right-col{
+        color: rebeccapurple;
+        font-family: 'Sofia Sans', sans-serif;
+        font-size: 1.2rem;
+        margin-right: $base-margin;
+    }
+}
